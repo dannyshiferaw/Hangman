@@ -47,8 +47,8 @@ class HangmanGame {
         }
         var chars:[Character] = Array(word)
         for i in indexesOfMissingCharacters {
-            missingCharacters.append(chars[i-1])
-            chars[i-1] = "-"
+            missingCharacters.append(chars[i])
+            chars[i] = "-"
         }
         return String(chars)
      }
